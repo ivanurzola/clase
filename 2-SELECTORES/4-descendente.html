@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selector Descendente</title>
+
+        <style>
+
+            /* El selector descendente selecciona y estiliza a todos los elementos que estén dentro de otro */
+
+            div p{
+                /* background-color: violet; */
+            }
+            section div{
+                /* background-color: violet */
+            }
+            
+            .mi-contenedor p{
+                /* background-color: violet; */
+            }
+
+            section div p{
+                /* background-color: violet; */
+            }
+
+            
+        
+
+           
+
+
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <p> Soy la p1</p>
+        <section>
+            
+            <p> Soy la p2</p>
+
+            <article>
+                <div class="mi-contenedor">
+                    <p>Soy la p3</p>
+                    <div>Soy un div y no debería ser utilizado para escribir texto. Soy un contenedor</div>
+                </div>
+
+            </article>
+
+            <div>
+                <p>Soy la p4</p>
+
+            </div>
+
+        </section>
+
+
+
+   
+    </body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <title>Love & Hate</title>
+
+        <!-- Las etiquetas de link (<a>) pueden tener 4 estados:
+        1) link: cuando la etiqueta <a> no ha tenido interacción. Se encuentra en su estado inicial.
+        2) visited: cuando una etiqueta <a> ha sido pulsada y por lo tanto visitada
+        3) hover: Es un estado que adquiere una etiquetadel dom cuando ponemos en cursor encima sin pulsar
+        4) active: Es el estado que adquiere una etiqueta de dom cuando pulsamos encima de ella y no soltamos el boton del raton --> 
+    </head>
+
+    <style>
+
+*{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            line-height: 1;
+        }
+        html, body{
+            font-family: "Montserrat";
+            font-size: 16px;
+        }
+
+        .boton-principal{
+            text-transform: uppercase;
+            display: inline;
+            align-items: center;
+                        
+          }
+
+          nav.boton-principal:link{
+            color: black;
+          }
+          nav.boton-principal:visited{
+            color: #151515;
+          }
+          nav.boton-principal:hover{
+            color: #ffffff;
+            /* background-color: orange; */
+          }
+          nav.boton-principal:active{
+            color: red;
+          }
+
+          #botonera-principal{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: #eeeeee;
+            height: 30px;
+            justify-content: center;
+            align-items: stretch;
+            gap: 30px;
+            
+
+          }
+
+          .mi-div{
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            border-radius: 20px;
+            margin-top: 100px;
+            margin-left: 200px;
+
+          }
+
+
+          .mi-div:hover{
+                background-color: aqua;
+          }
+          .mi-div:active{
+            background-color: red;
+            border-radius: 10px;
+            border: #151515 solid 2px;
+          }
+
+          .mi-div:active + #botonera-principal{
+            background-color: red;
+            border-radius: 10px;
+            border: #151515 solid 2px;
+          }
+
+
+    </style>
+
+    <body>
+
+      <div class="mi-div"></div>
+        <nav id="botonera-principal">
+
+           
+            <a href="#" class="boton-principal"> Home</a>
+            <a href="#" class="boton-principal"> Moda Mujer</a>
+            <a href="#" class="boton-principal"> Deportes</a>
+            <a href="#" class="boton-principal"> Hogar</a>
+            
+            
+
+
+
+        </nav>
+
+        
+   
+    </body>
+
+</html>

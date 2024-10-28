@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selector Adyacente</title>
+
+        <style>
+
+            /* El selector adyacente selecciona y estiliza a todos los elementos adyacentes (posteriores) */
+
+            section + p{
+                /* background-color: violet */;
+            }
+
+            article + p{
+                /* background-color: violet; */
+            }
+
+            .mi-contenedor + div{
+                background-color: violet;
+            }
+
+
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <p> Soy la p1</p>
+        <section>
+            
+            <p> Soy la p2</p>
+
+            <article class="mi-contenedor">
+                <p>soy la p6</p>
+                <div>
+                    <p>Soy la p3</p>
+                    <div>Soy un div y no debería ser utilizado para escribir texto. Soy un contenedor</div>
+                </div>
+
+            </article>
+
+            <div>
+                <p>Soy la p4</p>
+
+            </div>
+
+        </section>
+        <p>soy el p7</p>
+        <p>soy el p8</p>
+
+        <article>
+            <p> Soy la p5</p>
+        </article>
+        <p> Soy la p9</p>
+        <p> Soy la p10</p>
+
+
+
+   
+    </body>
+
+</html>

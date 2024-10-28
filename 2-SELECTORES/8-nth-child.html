@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selector Nth-child</title>
+
+        <style>
+
+            /* El selector nth-child selecciona y estiliza a todos los elementos del DOM */
+            /* Su grado de especificidad es 0 */
+
+         p:nth-child(3){
+            /* background-color: violet; */
+         }
+         div:nth-child(2){
+            background-color: violet;
+         }
+         li:nth-child(even){
+            background-color: #cccccc;
+         }
+         li:nth-child(odd){
+            background-color: #eeeeee;
+         }
+
+
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <article>
+            <p>Soy una p y soy la primera</p>
+            <p>Soy una p y soy la segunda</p>
+            <p>Soy una p y soy la tercera</p>
+        </article>
+
+        <div>
+            <div>Soy un div y soy el primero</div>
+            <div>Soy un div y soy el segundo</div>
+            <p>Soy una p y soy la tercera</p>
+        </div>
+
+        <ul>
+            <li>Soy un li</li>
+            <li>Soy un li</li>
+            <li>Soy un li</li>
+            <li>Soy un li</li>
+            <li>Soy un li</li>
+            <li>Soy un li</li>
+            <li>Soy un li</li>
+            <li>Soy un li</li>
+            <li>Soy un li</li>
+            <li>Soy un li</li>
+        </ul>
+
+
+   
+    </body>
+
+</html>
