@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Desplazar</title>
+
+        <!-- TRANSICIONES -->
+        <!-- linear
+        ease-in
+        ease-out
+        ease-in-out
+        -->
+
+        <style>
+
+            @font-face {
+                font-family: "MonserratLight";
+                src: url("./assets/fonts/Montserrat-Light.ttf");
+            }
+
+            .cuadrado{
+
+                width: 200px;
+                height:200px;
+                background-color: chartreuse;
+                border-radius: 10px;
+                transition:all 500ms linear;
+
+            }
+
+            .cuadrado:hover{
+
+                cursor: pointer;
+                transform:translate(100px,0px);
+
+            }
+
+
+            .boton{
+                font-family: "MonserratLight";
+                text-decoration:none;
+                font-size: 14px;
+                
+            }
+
+            .boton:link{
+                color: #151515;
+            }
+
+            .boton:visited{
+                color: #151515;
+            }
+
+            .boton:hover{
+                color: #151515;
+            }
+
+            .boton:active{
+                color: #151515;
+            }
+
+            .flechita{
+                opacity:0;
+                transition: all 0.2s linear;
+                
+            }
+
+            .boton:hover .flechita{
+                opacity:1;
+                transform: translate(10px,0);
+                
+            }
+
+            .botonera-principal{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                margin-top: 20px;
+            }
+
+
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <div class="cuadrado"></div>
+
+
+        <nav class="botonera-principal">
+
+
+            <a href="#" class="boton">
+                Supermercado <i class="fa-solid fa-arrow-right-long flechita"></i>
+            </a>
+    
+            <a href="#" class="boton">
+                Deporte <i class="fa-solid fa-arrow-right-long flechita"></i>
+            </a>
+    
+            <a href="#" class="boton">
+                Libros y papelería <i class="fa-solid fa-arrow-right-long flechita"></i>
+            </a>
+    
+            <a href="#" class="boton">
+                Música y cine <i class="fa-solid fa-arrow-right-long flechita"></i>
+            </a>
+
+
+        </nav>
+  
+   
+    </body>
+
+</html>

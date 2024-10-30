@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selector clase</title>
+
+        <style>
+
+            /* El selector clase selecciona y estiliza a los elementos del DOM que pertenezcan a esa clase */
+            /* Su grado de especificidad es 10 */
+
+         p.ikea{
+            background-color: orange;
+         }
+         .athletic{
+            border: 2px blue solid;
+         }
+         .bos{
+            padding: 10px;
+         }
+
+
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <p class="ikea athletic bos">soy una etiqueta p</p>
+        <p class="athletic">soy una etiqueta p</p>
+        <p class="ikea">soy una etiqueta p</p>
+        <span class="bos athletic"> Soy un span</span>
+        <h1 class="ikea">Soy un titular</h1>
+        <h2 class="athletic">Soy un subtitular</h2>
+     
+    </body>
+
+</html>

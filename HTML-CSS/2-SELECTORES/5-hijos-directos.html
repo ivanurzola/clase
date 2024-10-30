@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selector Hijos Directos</title>
+
+        <style>
+
+            /* El selector hijos directos selecciona y estiliza a todos los elementos que son hijos directos */
+
+            /* section > div{
+                background-color: violet;
+            } */  
+             section > p{
+                /* background-color: violet */
+             }    
+             
+             div > p{
+                /* background-color: violet; */
+             }
+             .mi-contenedor > p{
+                background-color: violet;
+             }
+
+
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <p> Soy la p1</p>
+        <section>
+            
+            <p> Soy la p2</p>
+
+            <article>
+                <p>soy la p6</p>
+                <div class="mi-contenedor">
+                    <p>Soy la p3</p>
+                    <div>Soy un div y no debería ser utilizado para escribir texto. Soy un contenedor</div>
+                </div>
+
+            </article>
+
+            <div>
+                <p>Soy la p4</p>
+
+            </div>
+
+        </section>
+
+        <article class="mi-contenedor">
+            <p> Soy la p5</p>
+        </article>
+
+
+
+   
+    </body>
+
+</html>

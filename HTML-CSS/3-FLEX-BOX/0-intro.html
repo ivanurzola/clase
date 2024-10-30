@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intro   </title>
+        
+        <!-- Cuando una caja se convierte en un contenedor Flex (Flex container) 
+         (display:flex) en CSS todos sus hijos directos se convierten en hijos flex(Flex Items)
+         Ambos, tanto el contenedor como sus hijos directos adquieren superpoderes.
+         Aparece conceptualmente 2 ejes: ele eje principal y el eje secundario. 
+         Estos dos ejes vienen determinados por un superpoder (propiedad CSS) llamada flex-direction.
+         Como en la vida real un padre flex (Flex container) puede ser a mismo tiempo, un hijo flex (Item flex)
+         por lo tanto un hijo flex puede ser padre flex. -->
+        
+    
+        <style>
+
+            .padre{
+                background-color: blueviolet;
+                height: 100vh;
+                display: flex;
+
+            }
+
+            .hijo{
+                background-color: orange;
+                width: 100px;
+                height: 100px;
+                border-radius: 10px;
+                font-size: 64px;
+                text-align: center;
+            }
+
+
+
+
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <div class="padre">
+
+            <div class="hijo">
+                <span> 1  </span>
+            </div>
+            <div class="hijo">
+                <span> 2  </span>
+            </div>
+            <div class="hijo">
+                <span> 3  </span>
+            </div>
+            <div class="hijo">
+                <span> 4  </span>
+            </div>
+            <div class="hijo">
+                <span> 5  </span>
+            </div>
+            <div class="hijo">
+                <span> 6  </span>
+            </div>
+
+
+        </div>
+   
+    </body>
+
+</html>

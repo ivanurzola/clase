@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elementos de línea y de bloque</title>
+
+        <style>
+            /* soy un comentario */
+            h1{
+                background-color: yellow;
+                
+            }
+
+            h3{
+                background-color: red;
+                color:white;
+            }
+
+            li{
+                background-color: blue;
+                color:white;
+            }
+
+            h1{
+                background-color: orange;
+                
+            }
+            
+            
+
+        </style>
+
+
+
+    </head>
+
+    <body>
+        
+        <!-- ELEMENTOS DE BLOQUE -->
+        <!-- esto es un comentario de html -->
+        <h1>Soy un h1 y soy una etiqueta de bloque. Sirvo para contener texto y soy un titular</h1>
+        <h2>Soy un h2 y soy una etiqueta de bloque. Sirvo para contener texto y soy un subtitular</h2>
+        <h3>Soy un h3 y soy una etiqueta de bloque. Sirvo para contener texto y soy un titular3</h3>
+        <h4>Soy un h4 y soy una etiqueta de bloque. Sirvo para contener texto y soy un titular4</h4>
+        <h5>Soy un h5 y soy una etiqueta de bloque. Sirvo para contener texto y soy un titular5</h5>
+        <h6>Soy un h6 y soy una etiqueta de bloque. Sirvo para contener texto y soy un titular6</h6>
+        <p>Soy una p y soy un etiqueta de bloque. Sirvo para contener texto</p>
+        <p>Soy una p y soy un etiqueta de bloque. Sirvo para contener texto</p>
+        <div>Soy un div y soy una etiqueta de bloque. No me utilices para contener texto</div>
+        <nav>Soy un nav y soy una etiqueta de bloque. Sirvo para contener una botonera. No me utileces para contener texto</nav>
+        <section>Soy una section y soy una etiqueta de bloque. Suelo servir para contener articles. No me utilices para contener texto</section>
+        <article>Soy un article y soy una etiqueta de bloque. Sirvo para contener artículos. No me utilices para contener texto</article>
+        <footer>Soy un footer y soy una etiqueta de bloque. Sirvo como contenedor de un pie de página. No me utilices para escribir texto</footer>
+        <aside>Soy un aside y soy una etiqueta de bloque. Sirvo como contenedor para contenidos laterales que estén a la izquierda o derecha de la página. No me utilices para contener texto</aside>
+        <ul>Soy un ul (unorderer list) y soy una etiqueta de bloque. Sirvo para contener li. No me utilices para contener texto</ul>
+        <li>Soy un li y soy una etiqueta de bloque. No me utilices NUNCA fuera de un ul. Puedes utilizarme para escribir texto.</li>
+
+        <!-- cómo debemos utilizar conjuntamente un ul con sus li -->
+        <ul>
+            <li>Soy un li y esto correctamente situado dentro de un ul</li>
+            <li>Soy un li y esto correctamente situado dentro de un ul</li>
+            <li>Soy un li y esto correctamente situado dentro de un ul</li>
+            <li>Soy un li y esto correctamente situado dentro de un ul</li>
+            <li>Soy un li y esto correctamente situado dentro de un ul</li>
+        </ul>
+
+        <ol> <!-- soy un ol y soy un elemento de bloque -->
+            <li>Soy un li y esto correctamente situado dentro de un ul</li>
+            <li>Soy un li y esto correctamente situado dentro de un ul</li>
+            <li>Soy un li y esto correctamente situado dentro de un ul</li>
+            <li>Soy un li y esto correctamente situado dentro de un ul</li>
+            <li>Soy un li y esto correctamente situado dentro de un ul</li>
+        </ol>
+
+        <!-- ELEMENTOS DE LÍNEA -->
+
+        <img src="./assets/img/rammstein.jpg" alt="Till Lindemann cantando">
+        <img src="./assets/img/rammstein.jpg" alt="Till Lindemann cantando">
+        <img src="./assets/img/rammstein.jpg" alt="Till Lindemann cantando">
+        <img src="./assets/img/rammstein.jpg" alt="Till Lindemann cantando">
+        <img src="./assets/img/rammstein.jpg" alt="Till Lindemann cantando">
+        <img src="./assets/img/rammstein.jpg" alt="Till Lindemann cantando">
+
+        <div>
+            <img src="./assets/img/rammstein.jpg" alt="Till Lindemann cantando">
+            
+        </div>
+
+        <div>
+            <img src="./assets/img/rammstein.jpg" alt="Till Lindemann cantando">
+        </div>
+
+        <span>Soy un span y soy un elemento de línea y sirvo para contener texto</span>
+        <span>Soy un span y soy un elemento de línea y sirvo para contener texto</span>
+        <span>Soy un span y soy un elemento de línea y sirvo para contener texto</span>
+        <span>Soy un span y soy un elemento de línea y sirvo para contener texto</span>
+
+        <a href="https://www.formula1.com/">Ir a la página de F1 Official</a>
+        <a href="https://www.thomann.de/es/index.html">Ir a la página de Thomann</a>
+
+        <!-- ELEMENTOS DE LÍNEA DE FORMULARIO -->
+        <label for="">Password*</label>
+        <input type="text">
+
+        <label for="">¿Quieres suscribirte a nuestra newsletter?</label>
+        <input type="checkbox">
+
+        <label for="">Elige un color</label>
+
+        <select name="" id="">
+            <option value="">blanco</option>
+            <option value="">negro</option>
+            <option value="">rojo</option>
+        </select>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <abbr title="Federation International Football Assotiation">FIFA</abbr>
+        <small>Soy un texto mas pequeño</small>
+
+        <p>El libro <cite>El Quijote</cite> lo escribió <strong>Miguel de Cervantes Saavedra</strong></p>
+        
+        Cualquier texto que escribamos sin etiqueta como este se considera un span
+        
+        <code>
+            let nombre = "Urk";
+            let edad = 10;
+        </code>
+        
+        
+        
+        <p><i>Lorem ipsum</i> dolor sit amet consectetur adipisicing elit. Itaque vitae, velit doloribus unde quam ducimus fuga ad. Alias laboriosam aliquam tempora culpa exercitationem ea recusandae iste nulla praesentium quibusdam, illo cumque dicta totam. Est maxime natus ducimus, illum magnam quisquam quia. Dicta, non voluptatem ea fuga corporis enim dolore optio! Laboriosam consequatur eum non. Quis aspernatur corrupti dolore sed adipisci facilis officiis fugiat tempore sequi sint quaerat animi minus hic omnis quia facere doloremque dignissimos porro, ut dicta quod veniam! Id nihil quas exercitationem laborum aut! Deleniti sit eum iste architecto inventore natus itaque, esse unde delectus veritatis nam? Quis, vero? Nihil ipsam ut nulla dicta id autem nesciunt doloribus temporibus, totam, rem sapiente reiciendis harum modi odio nobis quisquam? Enim asperiores repudiandae laboriosam. Est labore pariatur unde omnis! Sit expedita dolor vel, quae blanditiis quam illo natus commodi deserunt amet a numquam corrupti reprehenderit ut! Laboriosam ex cupiditate perferendis, debitis tempora ratione libero neque! Nemo asperiores rem natus doloribus vero ipsam modi officiis, iure iste eligendi libero, optio perspiciatis magnam quasi tempore rerum tenetur explicabo sint temporibus. Iste corporis, explicabo doloribus unde cum amet eveniet sed nulla voluptatum mollitia consectetur velit, assumenda nesciunt ipsam voluptate sint atque! Id aliquam odio eum doloribus fugit sit ex iusto, qui dicta delectus velit, expedita molestiae consectetur nobis ad sint, eveniet sunt adipisci totam! Illo optio consequatur praesentium possimus porro doloremque blanditiis nisi, maiores assumenda, dolorum perferendis quod architecto exercitationem, provident ut voluptas laborum aspernatur culpa tenetur dolore amet nihil minima cumque. Iusto dolorem qui nisi fuga iure harum obcaecati, molestias magni consequuntur cumque corrupti modi nihil facilis. Dicta, blanditiis quasi ducimus aliquid sunt quia quidem accusantium eveniet vel fugiat amet nihil deleniti asperiores vitae incidunt id temporibus, omnis, esse natus dolorum cupiditate eum? Unde cum ullam, sit aperiam eveniet, cumque recusandae provident necessitatibus quae voluptate pariatur? Odit quae, aperiam ipsam magni unde eligendi tempore, sint maiores architecto qui odio. Est sit quo magni saepe molestias omnis sapiente ut culpa id quas, ad, corporis quis tempora vitae nisi impedit laboriosam pariatur ullam quibusdam odit! Est nihil neque excepturi, consectetur nostrum alias dolorem blanditiis facere dolorum, nisi inventore quae architecto voluptatibus aspernatur expedita. Molestiae non architecto distinctio blanditiis, minima consectetur, enim quod dignissimos, placeat ut praesentium deserunt soluta doloremque porro labore est! Ea nisi ut velit libero deleniti reprehenderit in, sapiente vero culpa voluptatibus delectus laudantium incidunt impedit earum. Quis, mollitia accusantium. Explicabo quas sequi aliquam perspiciatis officia hic aspernatur qui? Accusantium, ipsa, est aut praesentium cum quas natus officiis animi voluptates impedit totam illo esse perspiciatis debitis quaerat minima. Quaerat earum nemo obcaecati quisquam, architecto assumenda minima aperiam vel quod, porro dolorem natus quam est facilis exercitationem modi unde ipsum asperiores numquam molestias repudiandae ullam fugit corporis. Quis omnis sed maiores nisi officia voluptate. Neque, dolor, provident deleniti odit totam aut vero, velit fuga amet ad voluptatem? Vitae voluptatem unde omnis maxime consequuntur, nam dolore nesciunt deserunt facilis neque ipsa ex adipisci expedita explicabo in cumque aliquam id culpa ratione. Similique, harum recusandae?</p>
+
+
+    </body>
+
+</html>
